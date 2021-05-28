@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_produto"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Produtos"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <Button
+        android:id="@+id/btn_estoque"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Estoque"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <Button
+        android:id="@+id/btn_movimentacao"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Movimentações"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <Button
+        android:id="@+id/btn_usuario"
+        android:layout_width="180dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Usuários"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="434dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="228dp"
+        android:layout_height="170dp"
+        app:srcCompat="@drawable/logotipo_stocknize"
+        tools:layout_editor_absoluteX="91dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
