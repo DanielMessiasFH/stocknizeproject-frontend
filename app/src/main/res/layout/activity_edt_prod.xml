@@ -31,14 +31,14 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="Nome Produto"
-        app:layout_constraintBottom_toTopOf="@+id/tipo"
-        app:layout_constraintEnd_toEndOf="@+id/preco"
-        app:layout_constraintStart_toStartOf="@+id/tipo"
+        app:layout_constraintBottom_toTopOf="@+id/tipo_prod"
+        app:layout_constraintEnd_toEndOf="@+id/preco_prod"
+        app:layout_constraintStart_toStartOf="@+id/tipo_prod"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/preco"
+        android:id="@+id/preco_prod"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="2dp"
@@ -47,10 +47,10 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="Preço"
-        app:layout_constraintBottom_toBottomOf="@+id/tipo"
+        app:layout_constraintBottom_toBottomOf="@+id/tipo_prod"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tipo"
-        app:layout_constraintTop_toTopOf="@+id/tipo"
+        app:layout_constraintStart_toEndOf="@+id/tipo_prod"
+        app:layout_constraintTop_toTopOf="@+id/tipo_prod"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -62,11 +62,11 @@
         android:text="Salvar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipo"
+        app:layout_constraintTop_toBottomOf="@+id/tipo_prod"
         tools:ignore="MissingConstraints" />
 
     <ListView
-        android:id="@+id/tipo"
+        android:id="@+id/tipo_prod"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="53dp"
@@ -74,7 +74,7 @@
         android:layout_marginBottom="37dp"
         android:text="Tipo"
         app:layout_constraintBottom_toTopOf="@+id/save"
-        app:layout_constraintEnd_toStartOf="@+id/preco"
+        app:layout_constraintEnd_toStartOf="@+id/preco_prod"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
         tools:ignore="MissingConstraints" />

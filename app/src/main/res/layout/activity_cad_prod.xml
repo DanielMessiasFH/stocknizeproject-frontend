@@ -5,79 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
+
+    <EditText
+        android:id="@+id/tipo_prod"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="95dp"
-        android:layout_marginBottom="50dp"
-        android:gravity="center_horizontal"
-        android:text="@string/cadastrar_produto"
-        android:textAlignment="center"
-        android:textColor="#505050"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nomeProduto"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="Tipo"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/preco_prod"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
+        app:layout_constraintVertical_bias="0.117"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/nomeProduto"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="26dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Nome Produto"
-        app:layout_constraintBottom_toTopOf="@+id/tipo"
-        app:layout_constraintEnd_toEndOf="@+id/preco"
-        app:layout_constraintStart_toStartOf="@+id/tipo"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/preco"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="2dp"
-        android:layout_marginEnd="58dp"
-        android:layout_marginBottom="2dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:text="Preço"
-        app:layout_constraintBottom_toBottomOf="@+id/tipo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tipo"
-        app:layout_constraintTop_toTopOf="@+id/tipo"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/save"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="57dp"
-        android:layout_marginBottom="342dp"
-        android:text="Salvar"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tipo"
-        tools:ignore="MissingConstraints" />
-
-    <ListView
-        android:id="@+id/tipo"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="37dp"
-        android:text="Tipo"
-        app:layout_constraintBottom_toTopOf="@+id/save"
-        app:layout_constraintEnd_toStartOf="@+id/preco"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.239" />
+
+    <Button
+        android:id="@+id/btn_cad_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="308dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Cadastrar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_user"
+        app:layout_constraintVertical_bias="0.358" />
+
+    <EditText
+        android:id="@+id/preco_prod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Preço"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tipo_prod"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.386" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

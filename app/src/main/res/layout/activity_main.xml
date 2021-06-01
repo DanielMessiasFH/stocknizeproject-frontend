@@ -4,54 +4,85 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_produto"
-        android:layout_width="180dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#9200BBD4"
-        android:text="Produtos"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="324dp" />
-
-    <Button
-        android:id="@+id/btn_estoque"
-        android:layout_width="180dp"
-        android:layout_height="46dp"
-        android:backgroundTint="#9200BBD4"
-        android:text="Estoque"
-        android:textColor="#000000"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="434dp" />
-
-    <Button
         android:id="@+id/btn_movimentacao"
-        android:layout_width="180dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="#9200BBD4"
         android:text="Movimentações"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="324dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/btn_produto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9200BBD4"
+        android:text="Produtos"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <Button
+        android:id="@+id/btn_estoque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#9200BBD4"
+        android:text="Estoques"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61" />
 
     <Button
         android:id="@+id/btn_usuario"
-        android:layout_width="180dp"
-        android:layout_height="46dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:backgroundTint="#9200BBD4"
         android:text="Usuários"
         android:textColor="#000000"
-        tools:layout_editor_absoluteX="212dp"
-        tools:layout_editor_absoluteY="434dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.78" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="228dp"
         android:layout_height="170dp"
-        app:srcCompat="@drawable/logotipo_stocknize"
-        tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="59dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo_stocknize" />
+
+    <Button
+        android:id="@+id/btn_sair"
+        android:layout_width="59dp"
+        android:layout_height="37dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="Sair"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
