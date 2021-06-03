@@ -1,8 +1,8 @@
 package br.com.stocknize.app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.view.View
 import android.widget.Toast;
 import kotlinx.android.synthetic.main.activity_login.*
 
@@ -29,8 +29,16 @@ class LoginActivity : AppCompatActivity() {
             Login()
         }
 
+        //sair do aplicativo pela tela de login
         btn_sair.setOnClickListener {
             finish()
+        }
+
+        //transição para tela de cadastro de usuário
+        btn_caduser.setOnClickListener {
+
+            val abrirCadastroUser = Intent(this,Cad_usuarioActivity::class.java )
+            startActivity(abrirCadastroUser)
         }
     }
 }

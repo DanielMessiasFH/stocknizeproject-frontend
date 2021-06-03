@@ -9,15 +9,13 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="10dp"
         android:gravity="center_horizontal"
         android:text="@string/cadastrar_usuario"
         android:textAlignment="center"
         android:textColor="#505050"
         android:textSize="26dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/nome_usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,67 +23,94 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/nome_usuario"
+        android:id="@+id/name_user"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Nome"
-        app:layout_constraintBottom_toTopOf="@+id/CPF"
+        android:hint="Nome"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/cpf_user"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="33dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:text="Email"
-        app:layout_constraintBottom_toTopOf="@+id/senha"
-        app:layout_constraintStart_toStartOf="@+id/CPF"
-        app:layout_constraintTop_toBottomOf="@+id/CPF"
-        tools:ignore="MissingConstraints" />
+        android:hint="CPF"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_user" />
 
     <EditText
-        android:id="@+id/senha"
+        android:id="@+id/company_user"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_marginBottom="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:ems="10"
-        android:text="Senha"
-        app:layout_constraintBottom_toTopOf="@+id/save"
-        app:layout_constraintStart_toStartOf="@+id/email"
-        app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:ignore="MissingConstraints" />
+        android:hint="Empresa"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpf_user" />
+
+    <EditText
+        android:id="@+id/login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Login"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/company_user" />
+
+    <EditText
+        android:id="@+id/pwd_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_user" />
 
     <Button
-        android:id="@+id/save"
-        android:layout_width="187dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="193dp"
+        android:id="@+id/btn_userup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#9200BBD4"
         android:text="Salvar"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_user" />
+
+    <Button
+        android:id="@+id/btn_voltarLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#9200BBD4"
+        android:text="CANCELAR"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/senha"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/CPF"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginBottom="27dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="CPF"
-        app:layout_constraintBottom_toTopOf="@+id/email"
-        app:layout_constraintStart_toStartOf="@+id/nome_usuario"
-        app:layout_constraintTop_toBottomOf="@+id/nome_usuario"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/pwd_user" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
