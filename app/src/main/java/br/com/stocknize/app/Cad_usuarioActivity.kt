@@ -3,11 +3,12 @@ package br.com.stocknize.app
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import br.com.stocknize.app.http.HttpHelper
 import br.com.stocknize.app.model.Usuario
 import com.google.gson.Gson
 import kotlinx.android.synthetic.main.activity_cad_usuario.*
 import kotlinx.android.synthetic.main.activity_login.*
-
+import org.jetbrains.anko.doAsync
 
 
 class Cad_usuarioActivity : AppCompatActivity() {
@@ -30,7 +31,12 @@ class Cad_usuarioActivity : AppCompatActivity() {
             val gson = Gson()
             val usuarioJson = gson.toJson(usuario)
 
-            println("######################" + usuarioJson)
+            //criando método assíncrono para chamada do httphelper em processo paralelo para conexão com a api
+            doAsync {
+                    val httppost = HttpHelper()
+                //passando a string json que o http precisa
+                        httppost.post(usuarioJson)
+            }
 
         }
 
