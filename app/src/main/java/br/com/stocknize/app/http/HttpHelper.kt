@@ -19,7 +19,7 @@ class HttpHelper {
         val client = OkHttpClient()
 
         //Criar o body da requisição
-        val body = RequestBody.create(headerHttp,json)
+        val body = RequestBody.create(headerHttp, json)
 
         //Construtor de Requisição POST http para o servidor
         var requestpost = Request.Builder().url(URL).post(body).build()
