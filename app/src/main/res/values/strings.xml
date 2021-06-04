@@ -5,6 +5,7 @@
 
     <string name="cadastrar_produto">Cadastrar Produto</string>
     <string name="editar_produto">Editar Produto</string>
+    <string name="estoque">Estoque</string>
 
     <string name="digitar_email">Digite seu Email</string>
     <string name="digitar_senha">Digite sua Senha</string>
