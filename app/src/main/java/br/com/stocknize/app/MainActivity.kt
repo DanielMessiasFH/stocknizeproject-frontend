@@ -15,7 +15,6 @@ import kotlinx.coroutines.launch
 class MainActivity : AppCompatActivity() {
     private val client = HttpClient(CIO)
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main);
@@ -29,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launch {
-            val response: HttpResponse = client.get("https://ktor.io/")
+            val response: HttpResponse = client.get("https://192.168.0.1:44395")
             println(response.status)
         }
 
