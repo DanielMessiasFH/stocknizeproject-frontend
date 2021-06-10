@@ -19,7 +19,7 @@
         app:layout_constraintEnd_toStartOf="@+id/preco_prod"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nomeProduto"
-        app:layout_constraintVertical_bias="0.117"
+        app:layout_constraintVertical_bias="0.088"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -42,13 +42,12 @@
         android:id="@+id/btn_cad_prod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="308dp"
+        android:layout_marginBottom="260dp"
         android:backgroundTint="#9200BBD4"
         android:text="Cadastrar"
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_user"
         app:layout_constraintVertical_bias="0.358" />

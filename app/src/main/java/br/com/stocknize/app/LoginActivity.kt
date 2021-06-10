@@ -8,7 +8,7 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
-    public fun Login() {
+    fun Login() {
         var username = user.getText().toString()
         var pass = password_user.getText().toString()
 
@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity() {
             Toast.makeText(this,"Preencha todos os campos", Toast.LENGTH_SHORT).show()
         }else if (username.equals("severino") && pass.equals("123")){
             Toast.makeText(this,"Login realizado com Sucesso", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this,MainActivity::class.java ))
         }else{
             Toast.makeText(this,"Usuário ou Senha incorretos", Toast.LENGTH_SHORT).show()
         }
@@ -36,7 +37,6 @@ class LoginActivity : AppCompatActivity() {
 
         //transição para tela de cadastro de usuário
         btn_caduser.setOnClickListener {
-
             val abrirCadastroUser = Intent(this,Cad_usuarioActivity::class.java )
             startActivity(abrirCadastroUser)
         }
